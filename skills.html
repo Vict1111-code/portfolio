@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Skills — Victor Ejeh</title>
+<meta name="description" content="Technologies and tools Victor Ejeh regularly uses, from core web fundamentals to a growing focus on AI." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="stylesheet" href="styles.css" />
+<script>
+  (function(){ try {
+    var t = localStorage.getItem('ve-theme');
+    if(t){ document.documentElement.setAttribute('data-theme', t); }
+  } catch(e){} })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="bg-grid" aria-hidden="true"></div>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<header class="site-nav">
+  <div class="container">
+    <a class="logo" href="index.html"><img src="images/vintech-logo-mark.png" alt="" class="logo-mark" width="34" height="34" /><span class="logo-text">VinTech<span class="cursor" aria-hidden="true"></span></span></a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" data-nav-links>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌙</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head container reveal is-visible">
+    <p class="eyebrow">skills</p>
+    <h1>Technologies &amp; tools</h1>
+    <p>Grouped by how I actually use them — what I build with daily, and what I'm actively growing into.</p>
+  </section>
+
+  <section class="container">
+    <div class="legend reveal">
+      <span><span class="dot" style="background:var(--accent-2)"></span> core — daily driver</span>
+      <span><span class="dot" style="background:var(--accent)"></span> building — active focus</span>
+      <span><span class="dot" style="border:1px solid var(--border-strong)"></span> exploring — learning now</span>
+    </div>
+
+    <div class="skill-groups" style="margin-top:24px;">
+      <div class="skill-group reveal">
+        <div class="skill-group-head">
+          <h3>Languages</h3>
+          <span class="path mono">~/skills/languages</span>
+        </div>
+        <div class="skill-items">
+          <span class="skill-item">JavaScript (ES6+) <span class="level level-core">core</span></span>
+          <span class="skill-item">HTML5 &amp; CSS3 <span class="level level-core">core</span></span>
+          <span class="skill-item">PHP <span class="level level-core">core</span></span>
+          <span class="skill-item">Go <span class="level level-core">core</span></span>
+          <span class="skill-item">Python <span class="level level-building">building</span></span>
+          <span class="skill-item">SQL <span class="level level-core">core</span></span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head">
+          <h3>AI / Machine Learning</h3>
+          <span class="path mono">~/skills/ai</span>
+        </div>
+        <div class="skill-items">
+          <span class="skill-item">Prompt Engineering <span class="level level-building">building</span></span>
+          <span class="skill-item">Generative AI Fundamentals <span class="level level-building">building</span></span>
+          <span class="skill-item">Machine Learning Basics <span class="level level-exploring">exploring</span></span>
+          <span class="skill-item">LLM-powered Applications <span class="level level-exploring">exploring</span></span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head">
+          <h3>Frameworks &amp; Frontend</h3>
+          <span class="path mono">~/skills/frontend</span>
+        </div>
+        <div class="skill-items">
+          <span class="skill-item">Vue.js <span class="level level-core">core</span></span>
+          <span class="skill-item">Bootstrap <span class="level level-core">core</span></span>
+          <span class="skill-item">Flexbox &amp; Grid <span class="level level-core">core</span></span>
+          <span class="skill-item">React Basics <span class="level level-exploring">exploring</span></span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head">
+          <h3>Data &amp; Infrastructure</h3>
+          <span class="path mono">~/skills/data</span>
+        </div>
+        <div class="skill-items">
+          <span class="skill-item">MySQL <span class="level level-core">core</span></span>
+          <span class="skill-item">PostgreSQL <span class="level level-core">core</span></span>
+          <span class="skill-item">Git &amp; GitHub <span class="level level-core">core</span></span>
+          <span class="skill-item">Linux &amp; Shell <span class="level level-core">core</span></span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head">
+          <h3>Tools</h3>
+          <span class="path mono">~/skills/tools</span>
+        </div>
+        <div class="skill-items">
+          <span class="skill-item">VS Code <span class="level level-core">core</span></span>
+          <span class="skill-item">Chrome DevTools <span class="level level-core">core</span></span>
+          <span class="skill-item">Vercel <span class="level level-core">core</span></span>
+          <span class="skill-item">NPM <span class="level level-core">core</span></span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-head">
+          <h3>Working style</h3>
+          <span class="path mono">~/skills/soft-skills</span>
+        </div>
+        <div class="skill-items">
+          <span class="skill-item">Problem-solving <span class="level level-core">core</span></span>
+          <span class="skill-item">Communication <span class="level level-core">core</span></span>
+          <span class="skill-item">Teamwork <span class="level level-core">core</span></span>
+          <span class="skill-item">Documentation <span class="level level-core">core</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p class="footer-note">© 2026 Victor Ejeh — built with care.</p>
+    <div class="footer-links">
+      <a href="https://github.com/Vict1111-code" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/victor-ejeh-155392334" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:v68410811@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="motion.js"></script>
+</body>
+</html>

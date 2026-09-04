@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Victor Ejeh</title>
+<meta name="description" content="A little background on Victor Ejeh — software engineer, mentor, and lifelong learner." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="stylesheet" href="styles.css" />
+<script>
+  (function(){ try {
+    var t = localStorage.getItem('ve-theme');
+    if(t){ document.documentElement.setAttribute('data-theme', t); }
+  } catch(e){} })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="bg-grid" aria-hidden="true"></div>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<header class="site-nav">
+  <div class="container">
+    <a class="logo" href="index.html"><img src="images/vintech-logo-mark.png" alt="" class="logo-mark" width="34" height="34" /><span class="logo-text">VinTech<span class="cursor" aria-hidden="true"></span></span></a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" data-nav-links>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌙</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head container reveal is-visible">
+    <p class="eyebrow">about</p>
+    <h1>A little background</h1>
+    <p>Who I am, how I think, and how I got here — told the way I track everything else: one commit at a time.</p>
+  </section>
+
+  <section class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="about-portrait">
+          <img src="images/victor.jpg" alt="Portrait of Victor Ejeh" />
+        </div>
+      </div>
+
+      <div>
+        <div class="about-block reveal">
+          <h2>Who I am</h2>
+          <p>I'm a software engineering student who turns designs and ideas into accessible, working software. I enjoy JavaScript, CSS layout systems, and increasingly, Python — where I'm building toward Machine Learning and Generative AI.</p>
+        </div>
+        <div class="about-block reveal">
+          <h2>Philosophy</h2>
+          <p>Great software is simple, inclusive and fast. I focus on clarity, accessibility and details that make an interface feel considered rather than assembled.</p>
+        </div>
+        <div class="about-block reveal">
+          <h2>Let's build</h2>
+          <p>I'm open to internships, freelance work and full-time roles — especially ones where I can apply Python and grow into AI/ML under real mentorship. I enjoy collaborating with designers and backend engineers to ship production-grade apps.</p>
+          <a class="btn btn-primary" href="contact.html">Work with me <span class="btn-arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">the journey</p>
+      <h2>git log --author="Victor Ejeh"</h2>
+      <p>The milestones that got me here, in order.</p>
+    </div>
+
+    <div class="timeline reveal" data-timeline>
+      <div class="commit" style="--i:0">
+        <span class="commit-hash mono">a1f9c2e</span>
+        <h3>Graduated — Emmanuel's Academy Secondary School</h3>
+        <p>Where the curiosity for how things work started turning into a habit of building them.</p>
+      </div>
+      <div class="commit" style="--i:1">
+        <span class="commit-hash mono">c48b7d1</span>
+        <h3>Began Software Engineering — Learn2Earn Tech Academy</h3>
+        <p>Learned the fundamentals: HTML, CSS, JavaScript, Git, and how to think in components.</p>
+      </div>
+      <div class="commit" style="--i:2">
+        <span class="commit-hash mono">7e2a904</span>
+        <h3>Started at BYU Pathway Worldwide</h3>
+        <p>Currently continuing my studies while building real projects alongside coursework.</p>
+      </div>
+      <div class="commit" style="--i:3">
+        <span class="commit-hash mono">f30d1c6</span>
+        <h3>Became a Mentor — Organization for Tech Advancement (OTA)</h3>
+        <p>Guided beginner developers through core concepts, sharpening how I explain and communicate technical ideas.</p>
+      </div>
+      <div class="commit" style="--i:4">
+        <span class="commit-hash mono">HEAD →</span>
+        <h3>Now: deepening Python, ML fundamentals &amp; Generative AI</h3>
+        <p>Applying what I know about shipping software to a new focus: building with AI.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p class="footer-note">© 2026 Victor Ejeh — built with care.</p>
+    <div class="footer-links">
+      <a href="https://github.com/Vict1111-code" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/victor-ejeh-155392334" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:v68410811@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="motion.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — Victor Ejeh</title>
+<meta name="description" content="A selection of recent work by Victor Ejeh, with links to live demos and source code." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="stylesheet" href="styles.css" />
+<script>
+  (function(){ try {
+    var t = localStorage.getItem('ve-theme');
+    if(t){ document.documentElement.setAttribute('data-theme', t); }
+  } catch(e){} })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="bg-grid" aria-hidden="true"></div>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<header class="site-nav">
+  <div class="container">
+    <a class="logo" href="index.html"><img src="images/vintech-logo-mark.png" alt="" class="logo-mark" width="34" height="34" /><span class="logo-text">VinTech<span class="cursor" aria-hidden="true"></span></span></a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" data-nav-links>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌙</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head container reveal is-visible">
+    <p class="eyebrow">projects</p>
+    <h1>Featured work</h1>
+    <p>A selection of recent projects — with links to live demos and source code.</p>
+  </section>
+
+  <section class="container">
+    <div class="project-grid">
+
+      <article class="project-card reveal">
+        <div class="window-bar">
+          <span class="window-dots"><span></span><span></span><span></span></span>
+          <span class="window-path">~/projects/cyberascend-africa</span>
+        </div>
+        <div class="project-media">
+          <img src="images/Cyberascend.jpg" alt="CyberAscend Africa screenshot" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h3>CyberAscend Africa</h3>
+          <p>Empowering Africa's digital future — a gamified platform for learning Cybersecurity, AI/ML, web development and more through engaging, structured lessons.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://cyberascend-africa.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/Vict1111-code/cyberascend-Africa" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="window-bar">
+          <span class="window-dots"><span></span><span></span><span></span></span>
+          <span class="window-path">~/projects/advance-to-do-list</span>
+        </div>
+        <div class="project-media">
+          <img src="images/AdvanceToDo.jpg" alt="Advance To-Do App screenshot" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h3>Advance To-Do App</h3>
+          <p>A vanilla JS CRUD app with localStorage persistence and accessibility-friendly controls, built to be fast and dependency-free.</p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://advance-to-do-list-zeta.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/Vict1111-code/Advance-to_do-list" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="window-bar">
+          <span class="window-dots"><span></span><span></span><span></span></span>
+          <span class="window-path">~/projects/autosms-sender</span>
+        </div>
+        <div class="project-media">
+          <img src="images/autoSMS.jpg" alt="AutoSMS Sender screenshot" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h3>AutoSMS Sender</h3>
+          <p>Automatically sends messages to up to 1,000 contacts — upload a contact list, compose a message, and hit send. Built with Python (Flask).</p>
+          <div class="project-tags">
+            <span class="project-tag">Python (Flask)</span>
+            <span class="project-tag">Automation</span>
+          </div>
+          <div class="project-links">
+            <a href="https://auto-sms-eight.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/Vict1111-code/AutoSMS" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="window-bar">
+          <span class="window-dots"><span></span><span></span><span></span></span>
+          <span class="window-path">~/projects/task-reminder</span>
+        </div>
+        <div class="project-media">
+          <img src="images/tk.jpg" alt="Taskreminder screenshot" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <h3>Taskreminder</h3>
+          <p>A daily lecture reminder app that keeps a simple schedule visible and on time, so nothing gets missed.</p>
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://taskreminderi.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/Vict1111-code/Task-reminder" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p class="footer-note">© 2026 Victor Ejeh — built with care.</p>
+    <div class="footer-links">
+      <a href="https://github.com/Vict1111-code" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/victor-ejeh-155392334" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:v68410811@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="motion.js"></script>
+</body>
+</html>

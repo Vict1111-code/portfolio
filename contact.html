@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Victor Ejeh</title>
+<meta name="description" content="Get in touch with Victor Ejeh — open for internships, freelance work and full-time roles." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="stylesheet" href="styles.css" />
+<script>
+  (function(){ try {
+    var t = localStorage.getItem('ve-theme');
+    if(t){ document.documentElement.setAttribute('data-theme', t); }
+  } catch(e){} })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="bg-grid" aria-hidden="true"></div>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<header class="site-nav">
+  <div class="container">
+    <a class="logo" href="index.html"><img src="images/vintech-logo-mark.png" alt="" class="logo-mark" width="34" height="34" /><span class="logo-text">VinTech<span class="cursor" aria-hidden="true"></span></span></a>
+    <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links" data-nav-links>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">🌙</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-head container reveal is-visible">
+    <p class="eyebrow">contact</p>
+    <h1>Get in touch</h1>
+    <p>Open for opportunities — send a message or email me directly.</p>
+  </section>
+
+  <section class="container">
+    <div class="contact-grid">
+      <form class="reveal" data-contact-form novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send message <span class="btn-arrow" aria-hidden="true">→</span></button>
+        <p class="form-status" data-form-status role="status"></p>
+      </form>
+
+      <aside class="reveal">
+        <span class="availability"><span class="status-dot" aria-hidden="true"></span> open to work</span>
+        <div class="contact-card">
+          <div class="contact-row">
+            <span class="k mono">email</span>
+            <span class="v"><a href="mailto:v68410811@gmail.com">v68410811@gmail.com</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="k mono">linkedin</span>
+            <span class="v"><a href="https://www.linkedin.com/in/victor-ejeh-155392334" target="_blank" rel="noopener">/victor-ejeh</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="k mono">github</span>
+            <span class="v"><a href="https://github.com/Vict1111-code" target="_blank" rel="noopener">Vict1111-code</a></span>
+          </div>
+          <div class="contact-row">
+            <span class="k mono">location</span>
+            <span class="v">Nigeria · remote-friendly</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p class="footer-note">© 2026 Victor Ejeh — built with care.</p>
+    <div class="footer-links">
+      <a href="https://github.com/Vict1111-code" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/victor-ejeh-155392334" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:v68410811@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="motion.js"></script>
+</body>
+</html>
