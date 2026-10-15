@@ -49,7 +49,7 @@
   <section class="container">
     <div class="project-grid">
 
-      <article class="project-card reveal">
+      <article class="project-card reveal" data-project-url="https://ascii-forge-studio.lovable.app/" tabindex="0" role="link" aria-label="Open ascii studio live demo">
         <div class="window-bar">
           <span class="window-dots"><span></span><span></span><span></span></span>
           <span class="window-path">~/projects/ascii-studio</span>
@@ -75,7 +75,7 @@
         </div>
       </article>
 
-      <article class="project-card reveal">
+      <article class="project-card reveal" data-project-url="https://klavier-eight.vercel.app/" tabindex="0" role="link" aria-label="Open klavier live demo">
         <div class="window-bar">
           <span class="window-dots"><span></span><span></span><span></span></span>
           <span class="window-path">~/projects/klavier</span>
@@ -97,7 +97,7 @@
         </div>
       </article>
 
-      <article class="project-card reveal">
+      <article class="project-card reveal" data-project-url="https://cyberascend-africa.vercel.app/" tabindex="0" role="link" aria-label="Open cyberascend africa live demo">
         <div class="window-bar">
           <span class="window-dots"><span></span><span></span><span></span></span>
           <span class="window-path">~/projects/cyberascend-africa</span>
@@ -120,7 +120,7 @@
         </div>
       </article>
 
-      <article class="project-card reveal">
+      <article class="project-card reveal" data-project-url="https://getlearnflow.lovable.app/" tabindex="0" role="link" aria-label="Open learnflow live demo">
         <div class="window-bar">
           <span class="window-dots"><span></span><span></span><span></span></span>
           <span class="window-path">~/projects/learnflow</span>
@@ -142,7 +142,7 @@
         </div>
       </article>
 
-      <article class="project-card reveal">
+      <article class="project-card reveal" data-project-url="https://advance-to-do-list-zeta.vercel.app/" tabindex="0" role="link" aria-label="Open advance to do list live demo">
         <div class="window-bar">
           <span class="window-dots"><span></span><span></span><span></span></span>
           <span class="window-path">~/projects/advance-to-do-list</span>
@@ -164,7 +164,7 @@
         </div>
       </article>
 
-      <article class="project-card reveal">
+      <article class="project-card reveal" data-project-url="https://auto-sms-eight.vercel.app/" tabindex="0" role="link" aria-label="Open autosms sender live demo">
         <div class="window-bar">
           <span class="window-dots"><span></span><span></span><span></span></span>
           <span class="window-path">~/projects/autosms-sender</span>
@@ -186,7 +186,7 @@
         </div>
       </article>
 
-      <article class="project-card reveal">
+      <article class="project-card reveal" data-project-url="https://taskreminderi.vercel.app/" tabindex="0" role="link" aria-label="Open task reminder live demo">
         <div class="window-bar">
           <span class="window-dots"><span></span><span></span><span></span></span>
           <span class="window-path">~/projects/task-reminder</span>
@@ -223,6 +223,25 @@
   </div>
 </footer>
 
+
+<script>
+  document.querySelectorAll('[data-project-url]').forEach(function(card) {
+    function openDemo() {
+      window.open(card.dataset.projectUrl, '_blank', 'noopener,noreferrer');
+    }
+    card.addEventListener('click', function(event) {
+      if (event.target.closest('a, button')) return;
+      openDemo();
+    });
+    card.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        if (event.target.closest('a, button')) return;
+        event.preventDefault();
+        openDemo();
+      }
+    });
+  });
+</script>
 <script src="script.js"></script>
 <script src="motion.js"></script>
 </body>
